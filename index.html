@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCKARMA Studio — Creative Studio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/svg+xml" href="assets/icon/mckarma icon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+    <meta name="description" content="MCKARMA Studio is an independent creative studio from Pretoria, South Africa, creating brands, digital experiences and visual stories.">
+
+    <meta name="theme-color" content="#0A0A0A">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- PAGE LOADER -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-inner">
+            <div class="loader-brand">
+                <strong>MCKARMA</strong>
+                <span>Studio.</span>
+            </div>
+            <div class="loader-line">
+                <span></span>
+            </div>
+            <div class="loader-meta">
+                <span>Independent Creative Studio</span>
+                <span>© 2026</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="custom-cursor" id="customCursor" aria-hidden="true">
+        <span id="cursorText"></span>
+    </div>
+
+    <header class="navbar">
+        <a href="#" class="logo" aria-label="MCKARMA Studio">
+            <span class="logo-full">
+                <strong>MCKARMA</strong>
+                <span>Studio.</span>
+            </span>
+            <span class="logo-short">
+                <strong>MCK</strong>
+                <span>Std</span>
+            </span>
+        </a>
+
+        <nav class="desktop-nav">
+            <a href="#work">Work</a>
+            <a href="#approach">Approach</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-right">
+            <a href="#contact" class="talk-link magnetic">
+                Let's talk <span>↗</span>
+            </a>
+
+            <button class="menu-button" id="menuButton" aria-label="Open menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <nav>
+            <a href="#work">Work</a>
+            <a href="#approach">Approach</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <a href="#contact" class="mobile-talk">
+            Let's talk ↗
+        </a>
+    </div>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero">
+
+            <div class="hero-slider">
+                <div class="hero-slide active">
+                    <img src="ASSETS/images/hero-01.webp" alt="Studio work — slide 1" class="parallax-image">
+                </div>
+                <div class="hero-slide">
+                    <img src="ASSETS/images/hero-02.jpg" alt="Studio work — slide 2" class="parallax-image">
+                </div>
+                <div class="hero-slide">
+                    <img src="ASSETS/images/hero-03.jpg" alt="Studio work — slide 3" class="parallax-image">
+                </div>
+                <div class="hero-slide">
+                    <img src="ASSETS/images/hero-04.webp" alt="Studio work — slide 4" class="parallax-image">
+                </div>
+                <div class="hero-slide">
+                    <img src="ASSETS/images/hero-05.jpg" alt="Studio work — slide 5" class="parallax-image">
+                </div>
+            </div>
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+                <p class="hero-label">Independent Creative Studio</p>
+
+                <h1 class="hero-title">
+                    <span>We create brands</span>
+                    <span>people remember.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Branding, digital experiences, photography
+                    and visual storytelling.
+                </p>
+
+                <a href="#work" class="hero-button magnetic">
+                    Explore our work ↗
+                </a>
+            </div>
+
+            <div class="hero-counter">
+                <span id="currentSlide">01</span>
+                <span class="counter-line"></span>
+                <span>05</span>
+            </div>
+
+            <div class="hero-dots">
+                <button class="dot active" data-slide="0"></button>
+                <button class="dot" data-slide="1"></button>
+                <button class="dot" data-slide="2"></button>
+                <button class="dot" data-slide="3"></button>
+                <button class="dot" data-slide="4"></button>
+            </div>
+
+        </section>
+
+
+        <!-- WORK -->
+        <section id="work" class="work-section reveal-section">
+
+            <div class="work-header reveal">
+                <div>
+                    <p class="section-label">01 — Selected Work</p>
+                    <h2>Work that<br>speaks.</h2>
+                </div>
+
+                <div class="work-intro">
+                    <p>
+                        A selection of brands, campaigns,
+                        digital experiences and visual stories
+                        created by MCKARMA Studio.
+                    </p>
+                </div>
+            </div>
+
+            <div class="work-slider-wrapper">
+                <div class="work-slider" id="workSlider">
+
+                    <article class="work-card reveal" data-project="0">
+                        <div class="work-image">
+                            <img src="ASSETS/images/work-01.jpg" alt="Fundis — brand identity project" class="parallax-image">
+                            <span class="work-number">01</span>
+                        </div>
+                        <div class="work-info">
+                            <div>
+                                <h3>Fundis</h3>
+                                <p>Brand Identity</p>
+                            </div>
+                            <span class="work-arrow">↗</span>
+                        </div>
+                    </article>
+
+                    <article class="work-card reveal" data-project="1">
+                        <div class="work-image">
+                            <img src="ASSETS/images/work-02.jpg" alt="Openchats Podcast — brand project" class="parallax-image">
+                            <span class="work-number">02</span>
+                        </div>
+                        <div class="work-info">
+                            <div>
+                                <h3>Openchats Podcast</h3>
+                                <p>Brand / Campaign</p>
+                            </div>
+                            <span class="work-arrow">↗</span>
+                        </div>
+                    </article>
+
+                    <article class="work-card reveal" data-project="2">
+                        <div class="work-image">
+                            <img src="ASSETS/images/work-03.jpg" alt="Rocomamas Menlyn - T-shirt design" class="parallax-image">
+                            <span class="work-number">03</span>
+                        </div>
+                        <div class="work-info">
+                            <div>
+                                <h3>Rocomamas Menlyn</h3>
+                                <p>T-shirt Design</p>
+                            </div>
+                            <span class="work-arrow">↗</span>
+                        </div>
+                    </article>
+
+                    <article class="work-card reveal" data-project="3">
+                        <div class="work-image">
+                            <img src="ASSETS/images/work-04.jpg" alt="Trevor John-Brand Identity" class="parallax-image">
+                            <span class="work-number">04</span>
+                        </div>
+                        <div class="work-info">
+                            <div>
+                                <h3>Trevor John</h3>
+                                <p>Poster Design / Branding</p>
+                            </div>
+                            <span class="work-arrow">↗</span>
+                        </div>
+                    </article>
+
+                    <article class="work-card reveal" data-project="4">
+                        <div class="work-image">
+                            <img src="ASSETS/images/work-05.jpg" alt="One Drop — campaign project" class="parallax-image">
+                            <span class="work-number">05</span>
+                        </div>
+                        <div class="work-info">
+                            <div>
+                                <h3>One Drop</h3>
+                                <p>Campaign / Content</p>
+                            </div>
+                            <span class="work-arrow">↗</span>
+                        </div>
+                    </article>
+
+                    <article class="work-card reveal" data-project="5">
+                        <div class="work-image">
+                            <img src="ASSETS/images/work-06.jpg" alt="MCKARMA — creative direction project" class="parallax-image">
+                            <span class="work-number">06</span>
+                        </div>
+                        <div class="work-info">
+                            <div>
+                                <h3>MCKARMA</h3>
+                                <p>Creative Direction</p>
+                            </div>
+                            <span class="work-arrow">↗</span>
+                        </div>
+                    </article>
+
+                </div>
+
+                <div class="work-controls">
+                    <div class="work-progress">
+                        <span id="workProgress"></span>
+                    </div>
+
+                    <div class="work-buttons">
+                        <button id="workPrev" class="magnetic" aria-label="Previous projects">←</button>
+                        <button id="workNext" class="magnetic" aria-label="Next projects">→</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- APPROACH -->
+        <section id="approach" class="approach-section reveal-section">
+
+            <div class="approach-top reveal">
+                <p class="section-label">02 — Our Approach</p>
+                <p class="approach-small-text">Strategy / Design / Culture / Storytelling</p>
+            </div>
+
+            <div class="approach-main reveal">
+                <h2>
+                    WE DON'T JUST
+                    <span>MAKE THINGS</span>
+                    LOOK GOOD.
+                </h2>
+                <h3>
+                    WE MAKE THEM
+                    <span>MEAN SOMETHING.</span>
+                </h3>
+            </div>
+
+            <div class="approach-bottom reveal">
+                <div class="approach-number">02</div>
+
+                <div class="approach-description">
+                    <p>
+                        MCKARMA is an independent creative practice
+                        built around strategy, design, culture and
+                        visual storytelling.
+                    </p>
+                    <p>
+                        We work with brands, artists and businesses
+                        to turn ideas into identities that connect,
+                        communicate and stay remembered.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- SERVICES -->
+        <section id="services" class="services-section reveal-section">
+
+            <div class="services-header reveal">
+                <div>
+                    <p class="section-label">03 — Services</p>
+                    <h2>What we<br><span>create.</span></h2>
+                </div>
+
+                <p class="services-intro">
+                    From the first idea to the final execution,
+                    we build visual experiences designed to
+                    move brands forward.
+                </p>
+            </div>
+
+            <div class="services-list">
+
+                <div class="service-item reveal">
+                    <div class="service-number">01</div>
+                    <div class="service-name">
+                        <h3>Brand Identity</h3>
+                        <p>Building brands with a clear voice, visual identity and personality.</p>
+                    </div>
+                    <div class="service-arrow">↗</div>
+                </div>
+
+                <div class="service-item reveal">
+                    <div class="service-number">02</div>
+                    <div class="service-name">
+                        <h3>Graphic Design</h3>
+                        <p>Campaigns, social content, artwork, print and visual communication.</p>
+                    </div>
+                    <div class="service-arrow">↗</div>
+                </div>
+
+                <div class="service-item reveal">
+                    <div class="service-number">03</div>
+                    <div class="service-name">
+                        <h3>Digital Experiences</h3>
+                        <p>Websites and digital experiences designed to turn attention into action.</p>
+                    </div>
+                    <div class="service-arrow">↗</div>
+                </div>
+
+                <div class="service-item reveal">
+                    <div class="service-number">04</div>
+                    <div class="service-name">
+                        <h3>Photography</h3>
+                        <p>Images that capture personality, culture, products and moments.</p>
+                    </div>
+                    <div class="service-arrow">↗</div>
+                </div>
+
+                <div class="service-item reveal">
+                    <div class="service-number">05</div>
+                    <div class="service-name">
+                        <h3>Creative Direction</h3>
+                        <p>Turning an idea into a complete creative vision across every touchpoint.</p>
+                    </div>
+                    <div class="service-arrow">↗</div>
+                </div>
+
+                <div class="service-item reveal">
+                    <div class="service-number">06</div>
+                    <div class="service-name">
+                        <h3>Content &amp; Marketing</h3>
+                        <p>Creative content and campaigns built to attract attention and grow audiences.</p>
+                    </div>
+                    <div class="service-arrow">↗</div>
+                </div>
+
+            </div>
+
+            <div class="services-footer reveal">
+                <p>Need something custom?</p>
+                <a href="#contact" class="magnetic">Let's talk ↗</a>
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT -->
+        <section id="contact" class="contact-section reveal-section">
+
+            <div class="contact-top reveal">
+                <p class="section-label">04 — Contact</p>
+                <p class="contact-location">
+                    Pretoria, South Africa<br>
+                    Working globally
+                </p>
+            </div>
+
+            <div class="contact-main reveal">
+                <div class="contact-heading">
+                    <h2>
+                        LET'S MAKE<br>
+                        SOMETHING<br>
+                        <span>MATTER.</span>
+                    </h2>
+                </div>
+
+                <div class="contact-cta">
+                    <p>
+                        Have a project, idea or brand that needs
+                        a creative direction? Let's talk.
+                    </p>
+
+                    <a href="mailto:hello@mckarma.com" class="contact-email magnetic">
+                        hello@mckarma.com
+                        <span>↗</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="contact-bottom reveal">
+                <div class="contact-socials">
+                    <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram ↗</a>
+                    <a href="https://facebook.com/" target="_blank" rel="noopener">Facebook ↗</a>
+                    <a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn ↗</a>
+                </div>
+
+                <a href="mailto:hello@mckarma.com" class="contact-button magnetic">
+                    Start a project
+                    <span>↗</span>
+                </a>
+            </div>
+
+            <footer class="site-footer reveal">
+                <div class="footer-logo">
+                    <strong>MCKARMA</strong> <span>Studio</span>
+                </div>
+                <p>© 2026 MCKARMA Studio. All rights reserved.</p>
+                <p>Independent Creative Practice</p>
+            </footer>
+
+        </section>
+
+    </main>
+
+
+    <!-- PROJECT CASE STUDY OVERLAY -->
+    <div class="project-overlay" id="projectOverlay">
+        <div class="project-overlay-inner">
+
+            <button class="project-close" id="projectClose" aria-label="Close project">
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="project-content">
+
+                <div class="project-image">
+                    <img id="projectImage" src="" alt="">
+                </div>
+
+                <div class="project-details">
+                    <div class="project-meta">
+                        <span id="projectNumber">01</span>
+                        <span id="projectCategory">Brand Identity</span>
+                    </div>
+
+                    <h2 id="projectTitle">Fundis</h2>
+
+                    <div class="project-description">
+                        <p id="projectDescription"></p>
+                    </div>
+
+                    <div class="project-services">
+                        <span>Services</span>
+                        <div id="projectServices"></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
